@@ -29,14 +29,14 @@ public class Aplicacion {
 
                     do {
                         System.out.println("\n\t\t\t\t\033[1m\033[4mPROGRAMA ATLAS\033[0m");
-                        System.out.println("\n1. Añadir una entrada al atlas");
-                        System.out.println("2. Mostrar el contenido actual del atlas");
-                        System.out.println("3. Buscar una entrada al atlas");
-                        System.out.println("4. Modificar una entrada al atlas");
-                        System.out.println("5. Ordenar por nombre el país");
-                        System.out.println("6. Mostrar el contenido del atlas con iterador");
-                        System.out.println("7. Eliminar una entrada al atlas");
-                        System.out.println("8. Eliminar el contenido completo del atlas");
+                        System.out.print("\n1. Añadir una entrada al atlas");
+                        System.out.println("\t\t2. Mostrar el contenido actual del atlas");
+                        System.out.print("3. Buscar una entrada al atlas");
+                        System.out.println("\t\t4. Modificar una entrada al atlas");
+                        System.out.print("5. Ordenar por nombre el país");
+                        System.out.println("\t\t6. Mostrar el contenido del atlas con iterador");
+                        System.out.print("7. Eliminar una entrada al atlas");
+                        System.out.println("\t8. Eliminar el contenido completo del atlas");
                         System.out.println("9. Salir");
                         System.out.print("Teclea una de las opciones: ");
 
@@ -88,14 +88,14 @@ public class Aplicacion {
 
                     do {
                         System.out.println("\n\t\t\t\t\033[1m\033[4mPROGRAMA ATLAS\033[0m");
-                        System.out.println("\n1. Añadir una entrada al atlas");
-                        System.out.println("2. Mostrar el contenido actual del atlas");
-                        System.out.println("3. Buscar una entrada al atlas");
-                        System.out.println("4. Modificar una entrada al atlas");
-                        System.out.println("5. Ordenar por nombre el país");
-                        System.out.println("6. Mostrar el contenido del atlas con iterador");
-                        System.out.println("7. Eliminar una entrada al atlas");
-                        System.out.println("8. Eliminar el contenido completo del atlas");
+                        System.out.print("\n1. Añadir una entrada al atlas");
+                        System.out.println("\t\t2. Mostrar el contenido actual del atlas");
+                        System.out.print("3. Buscar una entrada al atlas");
+                        System.out.println("\t\t4. Modificar una entrada al atlas");
+                        System.out.print("5. Ordenar por nombre el país");
+                        System.out.println("\t\t6. Mostrar el contenido del atlas con iterador");
+                        System.out.print("7. Eliminar una entrada al atlas");
+                        System.out.println("\t8. Eliminar el contenido completo del atlas");
                         System.out.println("9. Salir");
                         System.out.print("Teclea una de las opciones: ");
 
