@@ -68,7 +68,7 @@ public class ProgramaAtlasHashMap implements Comparator<String> {
         while (paisesI.hasNext()){
             System.out.println("País: "+paisesI.next()+"\t Capital: " + capitalesI.next());
         }
-        System.out.printf("\n\t\t\tHay %s elementos en el Atlas\n",atlas.size());
+        System.out.println("Hay " + atlas.size() + " elementos en el Atlas");
     }
 
     public void eliminarEntrada() {

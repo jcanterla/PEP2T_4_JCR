@@ -43,8 +43,14 @@ public class ProgramaAtlasArrayList implements Comparator<String>{
     public void modificarEntradaPais() {
         System.out.print("Teclea un País: ");
         int posicion = paises.indexOf(teclado.next());
-        System.out.print("Teclea modificación de capital: ");
-        capitales.set(posicion, teclado.next());
+        if (posicion != -1) {
+            System.out.print("Teclea modificación de capital: ");
+            capitales.set(posicion, teclado.next());
+        } else {
+            System.out.println("De este país no se encuentra capital");
+        }
+
+
     }
 
     public void ordenarPorNombrePais() {
@@ -72,9 +78,14 @@ public class ProgramaAtlasArrayList implements Comparator<String>{
         System.out.print("Teclea un País a eliminar: ");
         String opcion = teclado.next();
         int posicion = paises.indexOf(opcion);
-        paises.remove(posicion);
-        capitales.remove(posicion);
-        System.out.println(opcion + " eliminada del Atlas");
+        if (posicion != -1) {
+            paises.remove(posicion);
+            capitales.remove(posicion);
+            System.out.println(opcion + " eliminada del Atlas");
+        }else {
+            System.out.println("No se encuentra el país en el Atlas");
+        }
+
     }
 
     public void eliminarContenidoCompleto() {
