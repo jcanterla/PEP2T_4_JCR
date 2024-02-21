@@ -2,8 +2,8 @@ import java.util.*;
 
 public class ProgramaAtlasArrayList implements Comparator<String>{
 
-    private ArrayList<String> paises = new ArrayList<String>();
-    private ArrayList<String> capitales = new ArrayList<String>();
+    private final ArrayList<String> paises = new ArrayList<>();
+    private final ArrayList<String> capitales = new ArrayList<>();
 
     @Override
     public int compare(String o1, String o2) {
@@ -65,6 +65,7 @@ public class ProgramaAtlasArrayList implements Comparator<String>{
         while (paisI.hasNext() && capitalI.hasNext()) {
             System.out.println("País: " + paisI.next() + "\tCapital: " + capitalI.next());
         }
+        System.out.println("Hay " + capitales.size() + " elementos en el Atlas");
     }
 
     public void eliminarEntrada() {
