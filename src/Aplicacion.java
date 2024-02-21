@@ -46,7 +46,63 @@ public class Aplicacion {
 
     }
     public static void main(String[] args) {
-        menu();
+        ProgramaAtlasArrayList a = new ProgramaAtlasArrayList();
+
+        Scanner teclado = new Scanner(System.in);
+        int opcion = 0;
+        do {
+            System.out.println("1. Añadir una entrada al atlas");
+            System.out.println("2. Mostrar el contenido actual del atlas");
+            System.out.println("3. Buscar una entrada al atlas");
+            System.out.println("4. Modificar una entrada al atlas");
+            System.out.println("5. Ordenar por nombre el país");
+            System.out.println("6. Mostrar el contenido del atlas con iterador");
+            System.out.println("7. Eliminar una entrada al atlas");
+            System.out.println("8. Eliminar el contenido completo del atlas");
+            System.out.println("9. Salir");
+            System.out.print("Teclea una de las opciones: ");
+
+
+            try {
+                opcion = teclado.nextInt();
+            }catch (Exception e){
+                System.out.println("\t\tIntroduzca un numero entero");
+                teclado.nextLine();
+                continue;
+
+            }
+
+            switch (opcion) {
+                case 1:
+                    a.anyadirEntradaAtlas();
+                    break;
+                case 2:
+                    a.mostrarContenidoActual();
+                case 3:
+                    a.buscarEntradaAtlas();
+                    break;
+                case 4:
+                    a.modificarEntradaPais();
+                    break;
+                case 5:
+                    a.ordenarPorNombrePais();
+                    break;
+                case 6:
+                    a.mostrarContenidoAtlasIterator();
+                    break;
+                case 7:
+                    a.eliminarEntrada();
+                    break;
+                case 8:
+                    a.eliminarContenidoCompleto();
+                    break;
+                case 9:
+                    break;
+                default:
+                    System.out.println("Opción no valida, inserte una nueva opción\n");
+                    break;
+            }
+        } while (opcion != 9);
     }
 
 }
